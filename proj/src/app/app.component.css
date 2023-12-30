@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.navvv {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0f3460;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+.navvv .logo {
+  display: flex;
+  align-items: center;
+}
+.navvv .logo .icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+.navvv .logo .icon img {
+  width: 100%; /* Adjust the size as needed */
+  border-radius: 15px;
+
+  margin-right: 10px;
+}
+
+.navvv .compname {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navvv .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navvv .info .home {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 23px;
+  margin-right: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background-color: #0f3460;
+  transition: 0.2s ease-in-out;
+}
+.mess {
+  background-color: #0f3460;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.logout {
+  background-color: #0f3460;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.navvv .info .home:hover,
+.navvv .info .mess:hover,
+.navvv .info .logout:hover {
+  border-bottom: 2px solid #e91e63; /* Adjust the border color as needed */
+}
+/* .navvv .info .hom {
+    } */
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+.contain {
+  position: relative;
+}
+
+.ll {
+  position: absolute;
+  top: 55px;
+  z-index: 1;
+  background-color: #fff;
+  width: 250px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contain:hover .ll {
+  max-height: 750px;
+  opacity: 1;
+}
+
+.init {
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px;
+  transition: background-color 0.5s;
+}
+.init:hover {
+  background-color: gainsboro;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.first-image {
+  animation: spin 10s linear infinite;
+}
+.animat-icon {
+  animation: slideInLeft 1s ease-in-out;
+}
+.animat-disc {
+  transition: animation 1s;
+  animation: slideInRight 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
